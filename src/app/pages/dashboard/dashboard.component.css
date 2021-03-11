@@ -1,0 +1,10 @@
+.contain {
+    display: flex;
+    height: 100vh;
+}
+
+.sidev {}
+
+.contenido {
+    width: 100%;
+}

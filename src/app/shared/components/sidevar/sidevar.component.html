@@ -1,0 +1,11 @@
+<dx-drawer [openedStateMode]="selectedOpenMode" [position]="selectedPosition" [revealMode]="selectedRevealMode" [(opened)]="isDrawerOpen" [height]="400" [closeOnOutsideClick]="true" class="divi">
+    <div style="width: 200px">
+
+        <dx-list [items]="navigation" style="width: 100%" class="panel-list dx-theme-accent-as-background-color">
+            <div *dxTemplate="let item of 'item'" [routerLink]="item.url">
+                <div>{{item.text}}</div>
+            </div>
+        </dx-list>
+
+    </div>
+</dx-drawer>
