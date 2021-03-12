@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DxButtonModule, DxDrawerModule, DxListModule, DxRadioGroupModule, DxToolbarModule } from 'devextreme-angular';
+import { DxButtonModule, DxDrawerModule, DxListModule, DxRadioGroupModule, 
+         DxToolbarModule,  DxDataGridModule, DxTemplateModule,
+         DxLoadIndicatorModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [],
@@ -10,14 +12,20 @@ import { DxButtonModule, DxDrawerModule, DxListModule, DxRadioGroupModule, DxToo
     DxDrawerModule, 
     DxListModule, 
     DxRadioGroupModule, 
-    DxToolbarModule
+    DxToolbarModule,
+    DxDataGridModule,
+    DxTemplateModule,
+    DxLoadIndicatorModule
   ],
   exports: [
     DxButtonModule,
     DxDrawerModule, 
     DxListModule, 
     DxRadioGroupModule, 
-    DxToolbarModule
+    DxToolbarModule,
+    DxDataGridModule,
+    DxTemplateModule,
+    DxLoadIndicatorModule
   ]
 })
 export class DevextremeModule { }

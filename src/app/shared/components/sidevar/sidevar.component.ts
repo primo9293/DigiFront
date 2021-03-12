@@ -31,8 +31,8 @@ export class SidevarComponent implements OnInit {
   navigation: List[] = [
     { id: 1, text: "Productos", icon: "product", url: "products" },
     { id: 2, text: "Inventarios", icon: "money", url: "inventarios" },
-    { id: 3, text: "Clientes", icon: "group", url: "" },
-    { id: 4, text: "Ventas", icon: "card", url: "" },
+    { id: 3, text: "Clientes", icon: "group", url: "clientes" },
+    { id: 4, text: "Ventas", icon: "card", url: "ventas" },
     { id: 5, text: "Reportes", icon: "chart", url: "" }
   ];
 

@@ -10,6 +10,8 @@ import { DevextremeModule } from '../devextreme/devextreme/devextreme.module';
 import { ProductsComponent } from './products/products.component';
 import { SharedModule } from '../shared/shared.module';
 import { InventariosComponent } from './inventarios/inventarios.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { VentaComponent } from './venta/venta.component';
 
 
 @NgModule({
@@ -19,7 +21,11 @@ import { InventariosComponent } from './inventarios/inventarios.component';
 
     ProductsComponent,
 
-    InventariosComponent],
+    InventariosComponent,
+
+    ClienteComponent,
+
+    VentaComponent],
   imports: [
     CommonModule,
     FormsModule,

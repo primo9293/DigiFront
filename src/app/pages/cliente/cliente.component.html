@@ -1,5 +1,5 @@
-<div class="caja" *ngIf="inventario">
-    <dx-data-grid id="gridContainer" [dataSource]="inventario" [showBorders]="true">
+<div class="caja" *ngIf="clientes">
+    <dx-data-grid id="gridContainer" [dataSource]="clientes" [showBorders]="true" width="610">
 
         <div *dxTemplate="let data of 'cellTemplate'">
             <dxi-column dataField="Id"></dxi-column>
@@ -9,7 +9,7 @@
     </dx-data-grid>
 </div>
 
-<div *ngIf="!inventario">
+<div *ngIf="!clientes">
     <div class="loading">
         <dx-load-indicator id="medium-indicator" height="80" width="80">
         </dx-load-indicator>

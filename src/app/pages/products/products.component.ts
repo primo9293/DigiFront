@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DigitalService } from '../../services/digital.service';
+import { Producto } from '../../models/producto.interface';
 
 @Component({
   selector: 'app-products',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  product: Producto[]
+
+  constructor(private digitalService: DigitalService) { }
 
   ngOnInit(): void {
+    this.obtenerProductos()
+  }
+
+  obtenerProductos(){
+    console.log('Entro');
+    let api = '/api/Producto/Produc'
+    this.digitalService.getProductos(api)
+      .subscribe( (resp: Producto[]) => {
+        this.product = resp
+        // console.log('respuesta',resp);
+        // console.log('this.product',this.product);
+      })
   }
 
 }

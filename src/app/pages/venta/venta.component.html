@@ -1,14 +1,15 @@
-<div *ngIf="product">
-    <dx-data-grid id="gridContainer" [dataSource]="product" [showBorders]="true">
+<div class="caja" *ngIf="ventas">
+    <dx-data-grid id="gridContainer" [dataSource]="ventas" [showBorders]="true">
 
         <div *dxTemplate="let data of 'cellTemplate'">
             <dxi-column dataField="Nombre"></dxi-column>
-            <dxi-column dataField="Precio"></dxi-column>
+            <dxi-column dataField="Cantidad"></dxi-column>
+            <dxi-column dataField="Total"></dxi-column>
         </div>
     </dx-data-grid>
 </div>
 
-<div *ngIf="!product">
+<div *ngIf="!ventas">
     <div class="loading">
         <dx-load-indicator id="medium-indicator" height="60" width="60">
         </dx-load-indicator>

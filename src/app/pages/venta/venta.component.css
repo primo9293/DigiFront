@@ -1,3 +1,8 @@
+.caja {
+    display: flex;
+    justify-content: center;
+}
+
 .loading {
     display: flex;
     justify-content: center;
@@ -5,8 +10,4 @@
 
 p {
     text-align: center;
-}
-
-::ng-deep #gridContainer {
-    height: 440px;
 }
